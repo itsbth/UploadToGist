@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Upload to gist",
+        "command": "upload_to_gist"
+	}
+]
