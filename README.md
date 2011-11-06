@@ -4,7 +4,7 @@ A simple Sublime Text 2 plugin to upload the current file to Github.
 
 Usage
 -----
-Run 'Upload To Github' from the command palette.
+Run 'Upload To Gist' from the command palette.
 
 Setup
 ------------
