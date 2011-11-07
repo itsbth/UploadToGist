@@ -13,7 +13,7 @@ class UploadToGistCommand(sublime_plugin.TextCommand):
                 sublime.status_message("Copied URL to clipboard")
             except Exception, e:
                 print e
-                sublime.status_message("Unable to upload file")
+                sublime.status_message("Unable to upload file: " + str(e))
 
     def is_enabled(self):
         return self.view.file_name() and len(self.view.file_name()) > 0
