@@ -1,0 +1,9 @@
+{
+	// Copy any modified settings to `User/upload-to-gist.sublime-settings`
+    // otherwise modifications will not survive updates.
+    
+	// "login": "itsbth",
+	// "token": "",
+	"public": true,
+	"description": "Uploaded by UploadToGist for Sublime Text 2"
+}

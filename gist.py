@@ -38,13 +38,13 @@ else:
     post = post_curl
 
 
-def create(files, private=False, description=None):
+def create(files, public=True, description=None, login=None, token=None):
     data = {
         u'files': {},
-        u'public': not private,
+        u'public': public,
         u'description': description if description else u'Uploaded by gist.py',
-        u'login': config(u'github.user'),
-        u'token': config(u'github.token'),
+        u'login': login if login else config(u'github.user'),
+        u'token': token if token else config(u'github.token'),
     }
     for fn in files:
         #data[u'files'][path.basename(fn)] = {
