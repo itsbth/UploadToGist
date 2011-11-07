@@ -15,9 +15,10 @@ def config(key):
 
 def post_urllib2(url, data):
     req = urllib2.Request(url,
-        headers={u'Content-Type': u'application/json'},
-        data=json.dumps(data).encode(u'utf-8'))
-    return urllib2.urlopen(req).geturl()
+        data=data,
+        headers={u'Content-Type': u'application/json'})
+    res = urllib2.urlopen(req)
+    return res.geturl()
 
 
 def post_curl(url, data):
